@@ -67,4 +67,6 @@
   </form>
 </div>
 
-<app-card></app-card>
+<ng-container class="container" *ngFor="let card of cards">
+  <app-card></app-card>
+</ng-container>
