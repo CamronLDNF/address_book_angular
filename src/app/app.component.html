@@ -1,3 +1,5 @@
+<h2>Create contact</h2>
+
 <div class="container max-w-lg mx-6">
   <form class="bg-white shadow-md w-full max-w-md px-8 pt-6 pb-8 mb-4">
     <h2>Create contact</h2>
@@ -67,6 +69,6 @@
   </form>
 </div>
 
-<pre>
-  {{ contacts | json }}
-</pre>
+<ng-container class="container" *ngFor="let c of contacts">
+  <app-contact [contact]="c"></app-contact>
+</ng-container>
